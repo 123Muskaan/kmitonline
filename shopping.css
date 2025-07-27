@@ -1,102 +1,58 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-header {
-  background-color: #333;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  animation: fadeIn 2s ease-in;
   color: #fff;
-  padding: 1rem;
-  text-align: center;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding: 0;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #ffd700;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero {
   text-align: center;
-  padding: 3rem 1rem;
-  background: linear-gradient(to right, #6dd5ed, #2193b0);
-  color: white;
-  animation: fadeIn 2s ease-in;
+  padding: 100px 20px;
 }
 
-button {
-  padding: 0.8rem 1.2rem;
-  background-color: #ff6600;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
-button:hover {
-  transform: scale(1.05);
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .hero-btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background-color: #e91e63;
-  color: white;
+  padding: 10px 20px;
+  background-color: white;
+  color: #4facfe;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hero-btn:hover {
-  background-color: #c2185b;
+  background-color: #4facfe;
+  color: white;
 }
 
-/* ----------------- Product Section ----------------- */
-
-.products-section {
-  padding: 2rem;
+footer {
   text-align: center;
+  padding: 20px;
+  background-color: #003366;
+  color: white;
 }
 
-/* Unified product-grid (use flex for better control) */
-.product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-}
 
-/* Single product card styling */
-.product-card {
-  background-color: #fff;
-  width: 260px;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-}
