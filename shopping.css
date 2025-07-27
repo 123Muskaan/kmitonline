@@ -1,5 +1,4 @@
 /* Fade-in animation + gradient background */
-
 body {
   margin: 0;
   padding: 0;
@@ -20,12 +19,19 @@ body {
   }
 }
 
+/* Navbar Styling */
 .navbar {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .nav-links {
@@ -34,54 +40,12 @@ body {
   gap: 20px;
 }
 
-.nav-links a {
+.nav-links li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  color: white;
-}
-
-.hero h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  animation: fadeIn 2s ease-in-out;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 20px;
-  animation: fadeIn 2.5s ease-in-out;
-}
-
-.hero-btn {
-  padding: 12px 24px;
-  background-color: white;
-  color: #4facfe;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  animation: fadeIn 3s ease-in-out;
-}
-
-.hero-btn:hover {
-  background-color: #4facfe;
-  color: white;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #003366;
-  color: white;
-  margin-top: 50px;
-}
 /* Product Grid Layout */
 .product-grid {
   display: flex;
@@ -138,5 +102,13 @@ footer {
   background-color: #00c6fb;
 }
 
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #003366;
+  color: white;
+  margin-top: 50px;
+}
 
 
