@@ -1,56 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ShopEase - Products</title>
-  <link rel="stylesheet" href="shopping.css">
-</head>
-<body>
-  <header>
-   <nav class="navbar">
-  <div class="logo">KMIT ONLINE SHOPPING</div>
-  <ul class="nav-links">
-    <li><a href="/kmitonline/index.html">Home</a></li>
-    <li><a href="/kmitonline/products.html">Products</a></li>
-    <li><a href="/kmitonline/slogin.html">Login</a></li>
-  </ul>
-</nav>
-  </header>
+  <link rel="stylesheet" href="shopping.css" />
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <main>
-    <form action="cart.html" method="get" class="product-form">
-      <div class="product-grid">
-        <article class="product-card">
-          <img src="phone.jpg" alt="Smartphone">
-          <h3>Smartphone</h3>
-          <p>&#8377;12,999</p>
-          <label><input type="checkbox" name="item" value="Smartphone"> Add to Cart</label>
-        </article>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      colo
 
-        <article class="product-card">
-          <img src="headphone1.jpg" alt="Headphones">
-          <h3>Headphones</h3>
-          <p>&#8377;1,999</p>
-          <label><input type="checkbox" name="item" value="Headphones"> Add to Cart</label>
-        </article>
-
-        <article class="product-card">
-          <img src="shoe.jpg" alt="Shoes">
-          <h3>Shoes</h3>
-          <p>&#8377;2,499</p>
-          <label><input type="checkbox" name="item" value="Shoes"> Add to Cart</label>
-        </article>
-      </div>
-
-      <div class="submit-button">
-        <button type="submit">View Cart</button>
-      </div>
-    </form>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 ShopEase. All rights reserved.</p>
-  </footer>
-</body>
-</html>
